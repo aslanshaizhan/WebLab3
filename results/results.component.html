@@ -1,0 +1,23 @@
+<h1>My results</h1>
+<button id="but">New</button>
+<br><br>
+<table>
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Distance in meters</th>
+    <th>Time</th>
+    <th>Average speed</th>
+    <th>Options</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let people of data">
+    <td>{{people.date}}</td>
+    <td>{{people.distance}}</td>
+    <td>{{people.time}}</td>
+    <td>{{people.average}}</td>
+    <td>{{people.options}}</td>
+  </tr>
+  </tbody>
+</table>
